@@ -20,6 +20,6 @@ export class Modal3Component {
 
   close(): void {
     const closeMessage = 'Modal closed';
-     
+     console.log();
   }
 }
