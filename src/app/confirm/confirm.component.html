@@ -1,0 +1,96 @@
+<app-header></app-header>
+<br />
+<hr />
+<section class="pt-50 pb-120 tracking-wrap">
+  <div class="theme-container container">
+    <div class="row">
+      <article class="card">
+        <header class="card-header" style="font-family: Oswald; color: black">
+          Book Details
+        </header>
+
+        <Details style="font-family: Oswald; color: black">
+          <div>
+            <i
+              style="margin-left: 10px; font-size: 25px; color: black"
+              class="fa fa-book"
+              aria-hidden="true"
+              >{{aa}}  {{bb}}
+              <header
+                style="font-family: Oswald; font-size: 20px; color: black"
+              >
+                ygreheert
+              </header></i
+            >ewgfewr <br />
+
+            <i
+              style="margin-left: 10px; font-size: 25px; color: black"
+              class="fa fa-id-card"
+              aria-hidden="true"
+              ><header
+                style="font-family: Oswald; font-size: 20px; color: black"
+              >
+                534yerer
+              </header></i
+            >
+          </div>
+        </Details>
+
+        <div class="card-body" style="font-family: Oswald; color: black">
+          <br />
+          <h6>Booking Reserve</h6>
+          <hr />
+          <br />
+
+          <article class="card">
+            <form [formGroup]="addUserForm">
+              <div class="card-body row">
+                 
+                <div
+                  style="margin-right: 11px; width: 250px"
+                  class="form-group"
+                >
+                  
+
+                  <mat-form-field appearance="fill">
+                    <mat-label>Enter a Borrowing date range</mat-label>
+                    <mat-date-range-input [rangePicker]="picker">
+                      <input matInput matStartDate placeholder="Start date" formControlName="datestart"/>
+                      <input matInput matEndDate placeholder="End date" formControlName="dateend"/>
+                    </mat-date-range-input>
+                    <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle
+                      matIconSuffix
+                      [for]="picker"
+                    ></mat-datepicker-toggle>
+                    <mat-date-range-picker #picker></mat-date-range-picker>
+                  </mat-form-field>
+                </div>
+              </div>
+            </form>
+          </article>
+          <br />
+          <hr />
+          <div class="button">
+            <button
+              style="
+                width: 200px;
+                height: 50px;
+                background: #cd7f32;
+                color: #fff;
+              "
+              (click)="opensweet()"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<br />
+<hr />
+
+<app-footer></app-footer>

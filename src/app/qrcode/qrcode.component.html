@@ -1,0 +1,7 @@
+<h1>QR Code generator</h1>
+
+<qrcode elementType="url" (qrCodeURL)="onCodeChange($event)" [width]="200" qrdata="https" [errorCorrectionLevel]="'Q'"></qrcode>
+
+<!-- <qrcode elementType="png" (qrCodeURL)="onCodeChange($event)" [width]="400" qrdata="https" [errorCorrectionLevel]="'L'"></qrcode>-->
+
+<a [href]="url" download="hatae"> Download Qr</a>
